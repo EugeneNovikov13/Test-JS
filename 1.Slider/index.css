@@ -1,0 +1,31 @@
+.gallery {
+    width: 800px;
+    margin: auto;
+}
+.img_container {
+    height: 500px;
+    width: 800px;
+    overflow: hidden;
+}
+.img_stage {
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease-in 1s;
+}
+.img_item img {
+    height: 500px;
+    width: 800px;
+}
+.navigation {
+    width: 800px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.navigation div {
+    width: 50px;
+}
+.left_arrow img {
+    opacity: 50%;
+}

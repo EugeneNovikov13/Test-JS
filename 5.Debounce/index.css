@@ -1,0 +1,18 @@
+.hideDiv {
+    width: 100vw;
+    height: 30vh;
+    opacity: 0;
+    transition: 1s ease-in;
+}
+div:first-of-type {
+    background-color: ghostwhite;
+}
+div:nth-of-type(2) {
+    background-color: blue;
+}
+div:last-of-type {
+    background-color: red;
+}
+.visible_block {
+    opacity: 100%;
+}

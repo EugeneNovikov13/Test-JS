@@ -1,0 +1,51 @@
+.user_block {
+    box-sizing: border-box;
+    width: 400px;
+    height: 200px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    background: #518bba;
+}
+.user_block img {
+    width: 120px;
+    height: 180px;
+    margin-right: 20px;
+    float: left;
+}
+.info_block {
+    float: left;
+    width: 130px;
+    height: 150px;
+}
+.user_first_name {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.user_last_name {
+    font-weight: bolder;
+}
+.pagination {
+    clear: left;
+    width: 500px;
+    height: 30px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+.pagination div {
+    box-sizing: border-box;
+    width: 60px;
+    height: 30px;
+    background: lightgrey;
+    border: 1px solid grey;
+    border-radius: 2px;
+    text-align: center;
+    padding-top: 5px;
+    font-weight: bold;
+}
+.pagination div:hover {
+    cursor: pointer;
+}

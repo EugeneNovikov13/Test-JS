@@ -1,0 +1,94 @@
+.container {
+    display: flex;
+    position: relative;
+}
+.container div {
+    margin: 20px;
+}
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: greenyellow;
+}
+.active_circle {
+    position: relative;
+    animation: shift 3s ease-in-out infinite;
+}
+@keyframes shift {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: 150px;
+    }
+    100% {
+        top: 0;
+    }
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid darkorchid;
+}
+.active_triangle {
+    animation: pulse 1s ease-in-out infinite;
+}
+@keyframes pulse {
+    0% {
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-bottom: 200px solid darkorchid;
+    }
+    50% {
+        border-left: 120px solid transparent;
+        border-right: 120px solid transparent;
+        border-bottom: 240px solid darkorchid;
+    }
+    100% {
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-bottom: 200px solid darkorchid;
+    }
+}
+.square {
+    width: 200px;
+    height: 200px;
+    background: deepskyblue;
+}
+.active_square {
+    transform-origin: 200px 200px 0;
+    animation: rotate 4s linear infinite;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.rectangle {
+    width: 400px;
+    height: 200px;
+    background: indianred;
+}
+.active_rectangle {
+    animation: disappear 5s ease-out infinite;
+}
+@keyframes disappear {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        transform: scale3d(0, 0, 1);
+    }
+    75% {
+        transform: scale3d(2, 2, 1);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
