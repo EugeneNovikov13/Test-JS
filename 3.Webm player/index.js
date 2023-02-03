@@ -1,5 +1,5 @@
-player = document.querySelector('#player');
-time = document.querySelector('.current_time');
+let player = document.querySelector('#player');
+let time = document.querySelector('.current_time');
 
 player.addEventListener('click', function () {
     if (this.paused) this.play()

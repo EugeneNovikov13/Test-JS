@@ -1,0 +1,38 @@
+    .gallery {
+        width: 800px;
+        margin: auto;
+    }
+    .gallery_img-container {
+        height: 500px;
+        width: 800px;
+        overflow: hidden;
+    }
+    .gallery_img-container__img-stage {
+        display: flex;
+        position: relative;
+        left: 0;
+        transition: all ease-in 1s;
+    }
+    .gallery_img-container__img-stage .img_item img {
+        height: 500px;
+        width: 800px;
+    }
+    .gallery_navigation {
+        width: 800px;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+    }
+    .gallery_navigation__left-arrow {
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+        background-image: url("img/left_arrow.png");
+        opacity: 50%;
+    }
+    .gallery_navigation__right-arrow {
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+        background-image: url("img/right_arrow.png");
+    }
